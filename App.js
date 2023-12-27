@@ -1,12 +1,14 @@
-import {React} from "react";
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import { View } from 'react-native';
 import Navigation from './components/navigation';
+//import { ThemeProvider } from './ThemeContext';
 
-export default function App() {
+const App = () => {
   return (
-    <View>
-      <Navigation/>
-    </View>
+      <View style={{ flex: 1 }}>
+        <Navigation />
+      </View>
   );
-}
+};
+
+export default App;

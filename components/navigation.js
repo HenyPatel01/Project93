@@ -1,20 +1,20 @@
-import {React} from "react";
-import { NavigationContainer } from "@react-navigation/native";
-import { createStackNavigator } from "@react-navigation/stack";
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import Homescreen from '../screens/homeScreen';
+import AddReminder from '../screens/addReminderScreen';
 
-import Homescreen from "../screens/homeScreen";
-import AddReminder from "../screens/addReminderScreen";
+const Stack = createStackNavigator();
 
-const Stack = createStackNavigator()
-const navigation = () => {
-    return(
-        <NavigationContainer>
-            <Stack.Navigator initialRouteName = "Home">
-                <Stack.Screen component={Homescreen} name="Home"/>
-                <Stack.Screen component={AddReminder} name="Add Reminder"/>
-            </Stack.Navigator>
-        </NavigationContainer>
-    )
-}
+const Navigation = () => {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator initialRouteName="Home">
+        <Stack.Screen name="Home" component={Homescreen} />
+        <Stack.Screen name="AddReminder" component={AddReminder} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+};
 
-export default navigation();
+export default Navigation;
