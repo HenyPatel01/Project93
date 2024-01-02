@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, Button, FlatList } from 'react-native';
 
-const addreminderScreen = () => {
+const AddReminderScreen = () => {
   const [reminders, setReminders] = useState([]);
   const [title, setTitle] = useState('');
   const [date, setDate] = useState('');
@@ -61,4 +61,4 @@ const addreminderScreen = () => {
   );
 };
 
-export default addreminderScreen;
+export default AddReminderScreen;
