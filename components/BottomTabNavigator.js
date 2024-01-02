@@ -32,8 +32,8 @@ export default class BottomTabNavigator extends Component {
                         );
                     }
                 })}
-                activeColor={"lightblue"}
-                inactiveColor={"gray"}
+                activeColor={"white"}
+                inactiveColor={"black"}
             >
                 <Tab.Screen
                     name="Home"
@@ -52,7 +52,7 @@ export default class BottomTabNavigator extends Component {
 
 const styles = StyleSheet.create({
     bottomTabStyle: {
-        backgroundColor: "#2f345d",
+        backgroundColor: "#3c649f",
         height: "8%",
         borderTopLeftRadius: RFValue(30),
         borderTopRightRadius: RFValue(30),
